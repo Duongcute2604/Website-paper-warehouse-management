@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Components/base.css" />
+    <link rel="stylesheet" href="./Components/header_siderbar.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <title>Dashboard - Quản lý học trực tuyến</title>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <!--LEFT SLIDE, LẤY TỪ SLIDEBA.HTML-->
+    <div id="sidebar-placeholder"></div>
+
+    <!--CONTAINER-->
+    <div id="right-content">
+      <!--LẤY TỪ HEADER.HTML-->
+      <div id="header-placeholder"></div>
+
+      <main>
+        <div class="content dashboard">
+          <div class="content-header">
+            <h2>📊 Thống kê tổng quan</h2>
+          </div>
+
+          <div class="stats">
+            <div class="card">
+              <h3>Người dùng</h3>
+              <p id="userCount">0</p>
+            </div>
+            <div class="card">
+              <h3>Khóa học</h3>
+              <p id="courseCount">0</p>
+            </div>
+            <div class="card">
+              <h3>Lượt học</h3>
+              <p id="sessionCount">0</p>
+            </div>
+            <div class="card">
+              <h3>Doanh thu (VNĐ)</h3>
+              <p id="revenue">0</p>
+            </div>
+          </div>
+          <!-- BIỂU ĐỒ CỘT -->
+          <div class="chart-column-container">
+            <h3 class="chart-title">Biểu đồ doanh thu theo tháng</h3>
+            <div class="chart-column">
+              <div class="number-and-columns">
+                <div class="number-percen">
+                  <span>100</span>
+                  <span>90</span>
+                  <span>80</span>
+                  <span>70</span>
+                  <span>60</span>
+                  <span>50</span>
+                  <span>40</span>
+                  <span>30</span>
+                  <span>20</span>
+                  <span>10</span>
+                  <span>0</span>
+                </div>
+                <div class="box-column"></div>
+              </div>
+              <div class="name-course">
+                <!-- month labels will be inserted here by dashboard.js -->
+                <!-- the script will fill both `.box-column` and this `.name-course` -->
+              </div>
+            </div>
+          </div>
+
+          <div class="recent-table">
+            <h3>Người dùng mới đăng ký</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Tên</th>
+                  <th>Email</th>
+                  <th>Ngày đăng ký</th>
+                </tr>
+              </thead>
+              <tbody id="userTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/fakeData.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/loadContent.js"></script>
+    <script src="./js/header_siderbar.js"></script>
+  </body>
+</html>

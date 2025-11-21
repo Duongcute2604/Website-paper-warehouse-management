@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assets/CSS/Base/reset.css" />
+    <link rel="stylesheet" href="../Assets/CSS/Base/base.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="Auth">
+      <div class="Auth-Login">
+        <h1>K-ENGLISH</h1>
+        <h2>Website học tiếng anh trực tuyến</h2>
+        <div class="form-group">
+          <input type="text" id="login-username" placeholder=" " required />
+          <label for="login-username">Email hoặc tên đăng nhập</label>
+        </div>
+        <div class="form-group">
+          <input type="password" id="login-password" placeholder=" " required />
+          <label for="login-password">Mật khẩu</label>
+        </div>
+        <div class="form-group">
+          <select id="login-role" required>
+            <option value="" disabled selected>Chọn vai trò</option>
+            <option value="student">Học viên</option>
+            <option value="teacher">Giảng viên</option>
+          </select>
+        </div>
+        <span class="link-forgot">Quên mật khẩu?</span>
+        <span class="link-signup">Bạn chưa có tài khoản?</span>
+        <label><input type="checkbox" id="checkbox"/> Ghi nhớ đăng nhập</label>
+        <button id="login-button">Đăng nhập</button>
+      </div>
+      <div class="Auth-Signup">
+        <h1>K-ENGLISH</h1>
+        <h2>Website học tiếng anh trực tuyến</h2>
+        <div class="form-group">
+          <input type="text" id="signup-yourname" placeholder=" " required />
+          <label for="signup-yourname">Họ và tên</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="signup-username" placeholder=" " required />
+          <label for="signup-username">Tên tài khoản</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="signup-email" placeholder=" " required />
+          <label for="signup-email">Email</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="signup-password"
+            placeholder=" "
+            required
+          />
+          <label for="signup-password">Mật khẩu</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="signup-password-confirm"
+            placeholder=" "
+            required
+          />
+          <label for="signup-password-confirm">Nhập lại mật khẩu</label>
+        </div>
+        <label><input type="checkbox" id="checkbox1"/> Tôi đồng ý với điều khoản</label>
+        <span class="link-login">Bạn đã có tài khoản?</span>
+        <button id="signup-button">Đăng kí</button>
+      </div>
+      <div class="Forgot-password">
+        <h1>K-ENGLISH</h1>
+        <h2>Website học tiếng anh trực tuyến</h2>
+        <div class="form-group">
+          <input type="email" id="forgot-email" placeholder=" " required />
+          <label for="forgot-email">Email</label>
+        </div>
+        <span class="link-login">Bạn đã có tài khoản?</span>
+        <label><input type="checkbox" id="checkbox1"/> Tôi đồng ý với điều khoản</label>
+        <button id="reset-button">Gửi lại mật khẩu</button>
+      </div>
+    </div>
+  </body>
+  <script src="./js/login.js"></script>
+</html>
