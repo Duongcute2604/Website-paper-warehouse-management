@@ -7,3 +7,4 @@ fetch("footer.html")
     document.getElementById("main-footer").innerHTML = data;
   })
   .catch((error) => console.error("Lỗi fetch:", error));
+# Commit 130 - 2026-01-10 16:57:23
