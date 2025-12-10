@@ -109,3 +109,4 @@ function moveToCenter(index) {
   // slides[index].classList.add("active"); // Removed as it's not used in CSS
   currentCenter = index;
 }
+# Commit 78 - 2026-01-10 16:57:08
