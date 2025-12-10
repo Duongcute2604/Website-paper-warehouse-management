@@ -156,3 +156,4 @@ function resetPassword() {
   alert("Email không tồn tại trong hệ thống.");
 }
 document.getElementById("forgot-button").onclick = resetPassword;
+# Commit 34 - 2026-01-10 16:56:55
