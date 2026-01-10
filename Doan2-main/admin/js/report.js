@@ -299,6 +299,11 @@ function renderRevenueStats(from, to) {
 
   // Tạo thẻ <script>
   const script = document.createElement("script");
+  // expose the prepared chart values so the chart script can read them
+  window.reportChartValues = chartValues;
+  // optional labels for months
+  window.reportChartLabels = chartValues.map((_, i) => `Tháng ${i + 1}`);
+
   script.src = "./assets/js/char.js"; // đường dẫn tới file JS của bạn
   script.defer = true; // để script chạy sau khi HTML được load xong (không bắt buộc)
 
@@ -386,7 +391,32 @@ function unlock(username) {
 
 // ================== EXPORT ==================
 function exportToPDF() {
-  window.print();
+  // Wait until the chart renderer has created DOM nodes in `.char-container`.
+  // If not present yet, poll for a short time then print. This prevents
+  // printing before the dynamic chart is inserted.
+  const chartContainer = document.querySelector('.char-container');
+  const readyToPrint = () => {
+    // small timeout to ensure CSS has applied
+    setTimeout(() => window.print(), 120);
+  };
+
+  if (!chartContainer) {
+    // no chart area on page - print immediately
+    readyToPrint();
+    return;
+  }
+
+  const maxWait = 3000; // ms
+  const interval = 100; // ms
+  let waited = 0;
+  const id = setInterval(() => {
+    // consider ready when chartContainer has child nodes (rendered)
+    if (chartContainer.children.length > 0 || waited >= maxWait) {
+      clearInterval(id);
+      readyToPrint();
+    }
+    waited += interval;
+  }, interval);
 }
 
 // ================== SỰ KIỆN UI ==================
