@@ -1,0 +1,72 @@
+.banner img {
+    width: 900px;
+    height: 100px;
+    border: solid 2px black;
+   
+}
+.mid {
+    width: 900px;
+    height: 350px;
+    display: flex;
+}
+.cotlon .hangtren img {
+    width: 150px;
+    height: 100px;
+    margin-top: 0;
+    margin-left:-20px;
+}
+.cotlon .hangtren {
+    display: flex;
+    padding: 40px;
+}
+.cotlon .hangtren ol {
+    margin-top: 0px;
+}
+.cotlon {
+    width: 650px;
+    height: 350px;
+    border: solid 2px black;
+    margin-right: auto;
+}
+.cotnho {
+    width: 200px;
+    border: solid 2px black;
+}
+.mid .cotnho .the1 {
+    background-color: rgb(170, 170, 239);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    padding: 0px;
+    border-bottom: solid 2px black;
+}
+.end {
+    width: 900px;
+    height: 80px;
+    border: solid 2px black;
+    margin-top: 10px;
+}
+.end span {
+    font-size: 30px;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+}
+.hangduoi {
+    margin-left:20px;
+}
+.hangduoi .anh {
+    color: red;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.hangduoi .bannerx img {
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+    margin-top: 30px;
+    
+}   

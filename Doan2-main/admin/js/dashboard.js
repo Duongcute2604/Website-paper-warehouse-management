@@ -1,7 +1,7 @@
 /* dashboard.js
-   - Renders monthly revenue chart dynamically
-   - Populates top stat cards and recent users table using `fakeData.js` sample data
-   - If `window.monthlyRevenue` is provided (array of numbers or objects), it will be used.
+   - Hiển thị biểu đồ doanh thu hàng tháng một cách linh hoạt (dynamic)
+    - Điền dữ liệu vào các thẻ thống kê hàng đầu và bảng người dùng gần đây bằng dữ liệu mẫu từ `fakeData.js`.
+    - Nếu `window.monthlyRevenue` được cung cấp (mảng số hoặc đối tượng), nó sẽ được sử dụng.
 */
 (function () {
   function formatCurrency(value) {

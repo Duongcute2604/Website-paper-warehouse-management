@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,8 +12,22 @@
     <link rel="stylesheet" href="./Components/base.css" />
     <link rel="stylesheet" href="./Components/header_siderbar.css" />
     <link rel="stylesheet" href="./css/paying.css" />
+
+
     <title>Quản lý thanh toán</title>
   </head>
+  <body>
+<div class="overlay" id="overlay"></div>
+    <!--LEFT SLIDE, LẤY TỪ SLIDEBA.HTML-->
+<div id="sidebar-placeholder"></div>
+    <!-- Nội dung chính ở đây -->
+
+    <!-- Đặt script cuối body -->
+    <script src="./js/paying.js"></script>
+  </body>
+</html>
+
+
   <body>
     <div class="overlay" id="overlay"></div>
     <!--LEFT SLIDE, LẤY TỪ SLIDEBA.HTML-->
@@ -198,6 +213,68 @@
               </div>
             </div>
           </div>
+<!-- Nút thêm giao dịch -->
+<div class="actions">
+  <button id="openAddPaymentModal" class="btn btn-primary">
+    <i class="fa-solid fa-plus"></i> Thêm giao dịch
+  </button>
+</div>
+<!-- Modal thêm giao dịch -->
+<div id="addPaymentModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Thêm giao dịch mới</h3>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Học viên</label>
+        <input type="text" id="newStudentName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Khóa học</label>
+        <input type="text" id="newCourseName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Số tiền</label>
+        <input type="number" id="newAmount" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Phương thức thanh toán</label>
+        <select id="newPaymentMethod" class="form-control">
+          <option value="Chuyển khoản">Chuyển khoản</option>
+          <option value="Tiền mặt">Tiền mặt</option>
+          <option value="Ví Momo">Ví Momo</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Ngày thanh toán</label>
+        <input type="date" id="newPaymentDate" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Trạng thái</label>
+        <select id="newStatus" class="form-control">
+          <option value="Đã thanh toán">Đã thanh toán</option>
+          <option value="Chưa thanh toán">Chưa thanh toán</option>
+          <option value="Chờ xác nhận">Chờ xác nhận</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer" style="display:flex; justify-content:flex-end; gap:10px;">
+  <button id="cancelAddPayment" class="btn btn-secondary">Hủy</button>
+  <button id="submitNewPayment" class="btn btn-success">
+    <i class="fa-solid fa-save"></i> Lưu giao dịch
+  </button>
+</div>
+
+  </div>
+</div>
+
+
 
           <div class="paymentTable">
             <table class="payment-table">
@@ -248,6 +325,8 @@
                 ><b>Trạng thái:</b>
                 <p id="payStatus"></p
               ></span>
+              <tbody id="paymentTableBody"></tbody>
+
               <button id="closeModalBtn" class="closeModalBtn">Đóng</button>
             </div>
           </div>

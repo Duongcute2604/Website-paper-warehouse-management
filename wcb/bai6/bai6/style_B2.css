@@ -1,0 +1,51 @@
+body {
+	font-family: Time New Roman;
+}
+
+.form-container {
+	width: 500px;
+	margin: 30px auto;
+	border: 1px solid red;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid red;
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+td {
+	border: 1px solid red;
+	padding: 6px;
+}
+
+input[type="text"],select,textarea,input[type="file"] {
+  width: 95%;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.form-buttons{
+	text-align: center;
+	padding: 6px 12px;
+	border: 1px solid red;
+}
+
+.buttons { 
+    margin: 5px;
+    border: 1px solid red; 
+    background-color: #fff; 
+	
+} 
+
+
+.buttons:hover { 
+	background-color: #f0f0f0; 
+	font-weight: bold;
+}

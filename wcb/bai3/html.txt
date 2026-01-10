@@ -1,0 +1,19 @@
+<p> : paragrap : xuong 2 dong` 
+( chi dc 1 lan trong doan van ko the spam xuong nhieu dong nhu br)
+<br>: xuong 1 dong` = enter
+
+<div > : divide : phan chia 
+b : bold chữ đậm 
+i : chữ nghiêng
+a :address: link 
+u : underlink : chân
+del :  gạch giữa vào  chữ 
+inline : gõ xong không xuống dòng
+
+
+5. thẻ ảnh  và đường kẻ
+
+hr : duong ke
+rel :  relation
+ul: unorder list : 0 theo danh sach 
+li : list 

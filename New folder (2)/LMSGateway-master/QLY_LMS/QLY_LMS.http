@@ -1,0 +1,6 @@
+@QLY_LMS_HostAddress = http://localhost:5077
+
+GET {{QLY_LMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

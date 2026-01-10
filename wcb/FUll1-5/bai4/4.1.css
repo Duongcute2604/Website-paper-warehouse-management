@@ -1,0 +1,28 @@
+.bo {
+    position: relative;
+}
+.red {
+    position: absolute;
+    width:500px;
+    height:200px;
+    background-color: red;
+    top:50px;
+    left:50px;
+    
+}
+.green {
+    position: absolute;
+    width:500px;
+    height:200px;
+    background-color: green;
+    top:100px;
+    left:100px;
+}
+.blue {
+    position: absolute;
+    width:500px;
+    height:200px;
+    background-color:blue;
+    top:150px;
+    left:200px;
+}

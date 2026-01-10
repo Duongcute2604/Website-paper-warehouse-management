@@ -1,0 +1,107 @@
+.banner img {
+    width: 900px;
+    height: 100px;
+    border: solid 2px black;
+   
+}
+.mid {
+    width: 900px;
+    height: 350px;
+    display: flex;
+}
+.cotlon .hangtren .hop img {
+    width: 100px;
+    height: 70px;
+    margin-top: -20px;
+    margin-left:-20px;
+}
+.cotlon .hangtren .hop {
+    display:flex;
+    padding:10px;
+}
+.cotlon .hangtren {
+    display: inline-block;
+    padding: 40px;
+   
+}
+.cotlon .hangtren ul {
+    margin-top: -20px;
+}
+.cotlon {
+    width: 650px;
+    height: 350px;
+    border: solid 2px black;
+    margin-right: auto;
+}
+.cotnho {
+    width: 200px;
+    border: solid 2px black;
+}
+.mid .cotnho .the1 {
+    background-color: rgb(170, 170, 239);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    padding: 0px;
+    border-bottom: solid 2px black;
+}
+.end {
+    width: 900px;
+    height: 80px;
+    border: solid 2px black;
+    margin-top: 10px;
+}
+.end span {
+    font-size: 30px;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+}
+.hangduoi {
+    margin-left:20px;
+}
+.hangduoi .anh {
+    color: red;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.hangduoi .bannerx img {
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+    margin-top: 30px;
+    
+}   
+
+.the2 h2 {
+    background-color: rgb(170, 170, 239);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    padding: 0px;
+    border-bottom: solid 2px black;
+}
+
+.the2 ul {
+    list-style-type:  none;
+
+}
+.the2 .qc .ads {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+    align-items: center;
+    height:30px;
+    border: 1px solid #888;
+    margin-bottom:2px;
+
+    
+}
+.the2 .qc {
+    margin-top: -8px;
+}
